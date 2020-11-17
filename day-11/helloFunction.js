@@ -4,3 +4,5 @@ function hello() {
 
 var result = hello();
 console.log(result);
+
+//----------//
