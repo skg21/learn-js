@@ -26,10 +26,4 @@ function sk(e, f) {
 var result = sk(400, 500);
 console.log(result);
 
-//--------------
-function k(x, y, z) {
-    var v = x + y + z;
-    return v;
-}
-var result = k(400 + 500 + 600);
-console.log(result);
+//------------
