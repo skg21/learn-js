@@ -1,0 +1,9 @@
+write a program which can call a javascript alert function on click of a button. 
+
+write a progran which can call a javascript custom function (printMessage) defined in same html file.
+
+write a program which can call a javascript custom fuction (printMessage) defined in javascript file.
+
+
+alert("Hi there!");
+printMessage();
