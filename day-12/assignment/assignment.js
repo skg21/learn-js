@@ -1,5 +1,6 @@
 
 function printMessage() {
+    console.log("hi there");
     alert("Hi there");
 }
 

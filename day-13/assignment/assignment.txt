@@ -1,0 +1,5 @@
+create 5 p elements, read in javascript using tagName. print the elements(using for loops).
+
+create 1 div, read in javascript using className, print the element in console.
+
+create 1 div, read in javascript using id, print the element in console.
