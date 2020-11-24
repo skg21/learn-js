@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        function appendH1Element() {
+            var h1 = document.createElement("h1");
+            h1.innerHTML = "This is my first heading!";
+
+            var body = document.getElementById('body');
+            body.appendChild(h1);
+        }
+        function myfunction() {
+            var h2 = document.createElement("h2");
+            h2.innerHTML = "this is my second heading";
+
+            var div = document.getElementById('div1');
+            div1.appendChild(h2);
+        }
+        function secondfunction() {
+            var h3 = document.createElement(h3);
+            h3.innerHTML = "this is my theard heading";
+
+            var div2 = document.getElementById('div2');
+            div2.appendChild(h3);
+        }
+    </script>
+</head>
+
+<body id="body">
+    <div id="div1">
+        //append h1
+    </div>
+    <div id="div2">
+        //append p
+    </div>
+    <button onclick="secondfunction();">Add H3</button>
+</body>
+
+</html>

@@ -11,10 +11,11 @@ function readDiv() {
     var helo = document.getElementsByClassName('mydiv');
     console.log(helo[0]);
 }
-//---------------------
+//------------------
 
 function readHTML() {
     readDiv();
     readBODY();
+    sonu();
 }
 //-------------------
