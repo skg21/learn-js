@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+}
+#div1 {
+    height: 500px;
+    width: 50%;
+}
+#div2{
+    height: 500px;
+    width: 50%;
+}
+.left-div{
+    height: 460px;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.right-div{
+    height: 460px;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+#newDiv {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 5px;
+}
+#newDiv2 {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    margin: 5px;
+}

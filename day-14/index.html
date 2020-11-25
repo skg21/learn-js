@@ -9,6 +9,7 @@
             var body = document.getElementById('body');
             body.appendChild(h1);
         }
+        //---------------------------------------//
         function myfunction() {
             var h2 = document.createElement("h2");
             h2.innerHTML = "this is my second heading";
@@ -16,13 +17,21 @@
             var div = document.getElementById('div1');
             div1.appendChild(h2);
         }
+        //----------------------------------------//
         function secondfunction() {
-            var h3 = document.createElement(h3);
+            var h3 = document.createElement("h3");
             h3.innerHTML = "this is my theard heading";
 
             var div2 = document.getElementById('div2');
             div2.appendChild(h3);
         }
+
+        function sum() {
+            appendH1Element();
+            myfunction();
+            secondfunction();
+        }
+
     </script>
 </head>
 
@@ -33,7 +42,7 @@
     <div id="div2">
         //append p
     </div>
-    <button onclick="secondfunction();">Add H3</button>
+    <button onclick="sum();">Add H3</button>
 </body>
 
 </html>
