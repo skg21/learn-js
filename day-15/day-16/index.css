@@ -1,0 +1,31 @@
+.contner{
+    display: flex;
+}
+.left-div{
+    height: 500px;
+    width: 500px;
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.right-div{
+    height: 500px;
+    width: 500px;
+    background-color: burlywood;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+#newDiv{
+    height: 70px;
+    width: 70px;
+    background-color: chartreuse;
+    margin: 5px;
+}
+#newDiv2{
+    height: 70px;
+    width: 70px;
+    background-color: cyan;
+    margin: 5px;
+}
