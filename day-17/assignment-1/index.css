@@ -1,0 +1,10 @@
+div {  
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-div, .right-div{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}

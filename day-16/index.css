@@ -17,15 +17,22 @@
     flex-wrap: wrap;
     overflow: scroll;
 }
-#newDiv{
+.newDiv{
     height: 70px;
     width: 70px;
     background-color: chartreuse;
     margin: 5px;
 }
-#newDiv2{
+.newDiv2{
     height: 70px;
     width: 70px;
     background-color: cyan;
     margin: 5px;
+}
+
+.newColor {
+    background-color: darkred;
+}
+.newColor1{
+    background-color: deeppink;
 }
