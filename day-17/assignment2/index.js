@@ -16,10 +16,11 @@ function readName1() {
     var nameElement = document.getElementById('name1');
     alert(nameElement.value);
 }
+//-----------------
 function readName() {
-    //1. get input element in js
-    var nameElement = document.getElementById("name");
-    alert(nameElement.value);
-    var div = document.getElementById('nameinfo');
-    div.innerHTML = nameElement.value;
+    var className = document.getElementsByClassName("name");
+    alert(className[0].value);
+
+    var div = document.getElementById("id-div");
+    div.innerHTML = className[0].value;
 }
