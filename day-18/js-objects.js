@@ -102,8 +102,36 @@ for (var i = 0; i < teachers.length; i++) {
     console.log("tearcher", i + 1, "details : ");
     console.log("-------------------------------");
     console.log("name :", teachers[i].name);
-    console.log("name :", teachers[i].age);
-    console.log("name :", teachers[i].subject);
-    console.log("name :", teachers[i].schoolName);
+    console.log("age :", teachers[i].age);
+    console.log("subject :", teachers[i].subject);
+    console.log("schoolName :", teachers[i].schoolName);
+}
+//----------
+
+var dovelopers = [{
+    name: "jonsan",
+    age: "34",
+    work: "desiner",
+    country: "india",
+    programmingLanguage: ["javascript", "html", "css", "golang"]
+},
+{
+    name: "kamal singh",
+    age: "34",
+    work: "dovlopermen",
+    country: "india",
+}];
+
+for (var i = 0; i < Array.length; i++) {
+    console.log("dowlopers", i + 1, "details");
+    console.log("----------------------------");
+
+    console.log("name :", dovelopers[i].name);
+    console.log("age :", dovelopers[i].age);
+    console.log("work :", dovelopers[i].work);
+    console.log("country :", dovelopers[i].country);
+    for (var j = 0; j < dovelopers[i].programmingLanguage.length; j++) {
+        console.log(" knows programming language: ", dovelopers[i].programmingLanguage[j]);
+    }
 }
 
