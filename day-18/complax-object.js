@@ -18,7 +18,8 @@ var car = {
 console.log("Car Name: ", car.name);
 console.log("engine fuletype", car.engine.fuleType);
 console.log("enginePower", car.engine.boostEngine.enginePower);
-//------------------------------------------------------------------------//
+
+console.log("----------------------------------------------------")
 
 var bus = {
     name: "mahindra ",
@@ -35,3 +36,27 @@ var bus = {
 console.log("bus name :", bus.name);
 console.log("engine cc :", bus.engine.cc);
 console.log("engine cylinder:", bus.engine.cylinder);
+console.log("color :", bus.color);
+console.log("gear :", bus.gear);
+
+console.log("--------------------------------------------------");
+
+var bike = {
+    name: "splenderPlesh",
+    model: "2020",
+    gear: "4",
+    color: "black",
+    wheels: "2",
+    engine: {
+        cc: "97.7",
+        fuleType: "petrol",
+
+    }
+};
+console.log("bike name :", bike.name);
+console.log(" model :", bike.model);
+console.log("gear :", bike.gear);
+console.log("color :", bike.color);
+console.log("wheels :", bike.wheels);
+console.log("engine :", bike.engine.cc);
+console.log("engine fuleType :", bike.engine.fuleType);
