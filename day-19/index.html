@@ -3,13 +3,32 @@
 <head>
     <script src="index.js"></script>
 </head>
-<boy>
-    <div id="github-user-info">
 
+<body>
+    <div>
+        <div>
+            <form>
+                <label for="username">
+                    Enter github username: <input type="text" id="username">
+                </label>
+                <button type="button" onclick="getGithubUserInfo();">get github user info</button>
+            </form>
+        </div>
+        <div id="github-user-info">
+        </div>
     </div>
-    <button type="submit" onclick="getGithubUserInfo();">get github user info</button>
-    <div id="github"></div>
-    <button type="submit" onclick=" getGithubUser();">get github user </button>
-</boy>
+    <!---second-div---->
+    <div>
+        <div>
+            <form>
+                <label for="aboutname">
+                    enter github username:<input type="text" class="username">
+                </label>
+                <button type="button" onclick="getGithubUser();"> get github user info</button>
+            </form>
+        </div>
+        <div class="github-user-info"></div>
+    </div>
+</body>
 
 </html>

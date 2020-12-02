@@ -134,4 +134,17 @@ for (var i = 0; i < Array.length; i++) {
         console.log(" knows programming language: ", dovelopers[i].programmingLanguage[j]);
     }
 }
+//-------------------------------------------------------------------------------------------------//
+
+
+var computers = [{
+    name: "acer",
+    model: "2020",
+    color: "slveer",
+    size: "14in",
+
+},{
+    name:"apple"
+}]
+
 
