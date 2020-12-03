@@ -12,7 +12,7 @@ function getGithubUserInfo() {
             console.log(response);
             console.log("username: ", response.login);
             console.log("avator url: ", response.avatar_url);
-            // create img tag <img src="url">
+            // create img tag <img src="url"> 
             var img = document.createElement("img");
             img.setAttribute("src", response.avatar_url);
 
@@ -33,7 +33,7 @@ function getGithubUserInfo() {
 function getGithubUser() {
     var username = document.getElementsByClassName("username");
     var url = "https://api.github.com/users/" + username[0].value;
-console.log(url);
+    console.log(url);
     var karan = new XMLHttpRequest();
     karan.open("GET", url);
     karan.onreadystatechange = function () {
@@ -55,4 +55,31 @@ console.log(url);
         }
     };
     karan.send();
+}
+//---------------------------------------------------------------//
+function usernamesonu() {
+    var name = document.getElementsById("skg");
+    var url = "https://github.com/users/" + username.value;
+    console.log("url");
+
+    var sonu = new XMLHttpRequest();
+    sonu.open("GET", url);
+    sonu.onreadystatechange = function () {
+        if (sonu.readyState === 4) {
+            var response = JSON.parse(this.responseText);
+            console.log(response);
+            console.log("username", response.avatar_url);
+            var img = document.createElement("img");
+            img.setAttribute("src", response.avatar_url);
+            var h2 = document.createElement(h2);
+            h2.innerHTML = response.name;
+
+            var div = document.getElementsByTagName("div");
+            console.log(div[0]);
+            div[0].appendChild(img);
+            div[0].appendChild(h2);
+
+        }
+    };
+    sonu.send();
 }
