@@ -22,4 +22,10 @@ var books = `{
     }
     `;
 var obj = JSON.parse(books);
-console.log(obj.book);
+console.log(obj.book[0].id);
+for(var i = 0; i < obj.book.length; i++) {
+    console.log(obj.book[i].author);
+    console.log(obj.book[i].id);
+}
+
+
