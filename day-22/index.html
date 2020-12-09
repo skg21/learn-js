@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+
+        function increment() {
+            var labelDOM = document.getElementById("source");
+
+            labelDOM.innerHTML = parseInt(labelDOM.innerHTML) + 1;
+            /* var oldValue = parseInt(labelDOM.innerHTML);
+             var newValue = oldValue + 1;
+             labelDOM.innerHTML = newValue; */
+        }
+
+        function decrement() {
+            var labelDOM = document.getElementById("source");
+            var oldValue = parseInt(labelDOM.innerHTML);
+            var newValue = oldValue - 1;
+            labelDOM.innerHTML = newValue;
+        }
+
+        function increment1() {
+            var labelDOM = document.getElementById("source1");
+            labelDOM.innerHTML = parseInt(labelDOM.innerHTML) + 1;
+        }
+        function decrement1() {
+            var labelDOM = document.getElementById("source1");
+            var oldValue = parseInt(labelDOM.innerHTML);
+            var newValue = oldValue - 1;
+            labelDOM.innerHTML = newValue;
+        }
+    </script>
+</head>
+
+<body>
+    <button type="button" onclick="increment();"> +1 </button>
+    <button type="button" onclick="decrement();">-1</button>
+    <label id="source">0</label>
+    <!--second-part--><br><br>
+
+    <button type="button" onclick="increment1();"> +1 </button>
+    <button type="button" onclick=" decrement1();"> -1 </button>
+    <label id="source1"> 0 </label>
+
+</body>
+
+</html>

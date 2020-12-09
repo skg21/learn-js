@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #container {
+            border: 1px solid black;
+            height: 300px;
+            width: 500px;
+        }
+
+        .inner-div {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+
+        #main-div {
+            border: 1px solid black;
+            height: 300px;
+            width: 500px;
+        }
+    </style>
+
+    <script>
+        function createDiv() {
+            var div = document.createElement("div");
+            div.setAttribute("class", "inner-div");
+
+            var contianerDiv = document.getElementById("container");
+            contianerDiv.appendChild(div);
+        }
+
+        function removeDiv() {
+            var contianerDiv = document.getElementById("container");
+            var allDivs = contianerDiv.childElementCount;
+            var lastDiv = contianerDiv.childNodes[allDivs - 1];
+            contianerDiv.removeChild(lastDiv);
+        }
+        //-------------------------------------//
+
+        function createDiv1() {
+            var div = document.createElement("div");
+            div.setAttribute("class", "inner-div");
+
+            var containerDiv = document.getElementById("main-div");
+            containerDiv.appendChild(div);
+        }
+        function removeDiv1() {
+            var div = document.getElementById("main-div");
+            var allDivs = div.childElementCount;
+            var lastDiv = div.childNodes[allDivs - 1];
+            div.removeChild(lastDiv);
+        }
+    </script>
+</head>
+
+<body>
+
+    <div>
+        <button onclick="createDiv();">create Div</button>
+        <button onclick="removeDiv();">remove Div</button>
+    </div>
+    <div id="container">
+    </div>
+
+    <!----------------------------------------->
+
+    <div>
+        <button onclick="createDiv1();">create Div</button>
+        <button onclick="removeDiv1()">remove Div</button>
+    </div>
+    <div id="main-div"></div>
+
+
+
+</body>
+
+</html>
