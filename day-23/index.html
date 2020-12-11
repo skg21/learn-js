@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <label for="fullname">
+                Full Name: <input type="text" id="fullname">
+            </label>
+            <br>
+            <label for="email">
+                Email: <input type="email" id="email">
+            </label>
+            <br>
+            <label for="password">
+                Password: <input type="password" id="password">
+            </label>
+            <br>
+            <label for="dob">
+                DOB: <input type="date" id="dob">
+            </label>
+            <br>
+            <span>Gender:</span>
+            <label for="male-gender">
+                <input type="radio" name="gender" id="male-gender" value="Male"> Male
+            </label>
+            <label for="female-gender">
+                <input type="radio" name="gender" id="female-gender" value="Female"> Female
+            </label>
+            <br>
+            <label for="country">
+                Country: <select id="country">
+                    <option>---Select Country---</option>
+                    <option>Australia</option>
+                    <option>China</option>
+                    <option>India</option>
+                    <option>US</option>
+                    <option>South Africa</option>
+                </select>
+            </label>
+            <br><br>
+            <button type="button" onclick="createUser();">sign up</button>
+        </form>
+    </div>
+</body>

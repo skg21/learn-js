@@ -29,6 +29,18 @@
             var newValue = oldValue - 1;
             labelDOM.innerHTML = newValue;
         }
+
+        function increment3() {
+            var labelDOM = document.getElementById("plush");
+            labelDOM.innerHTML = parseInt(labelDOM.innerHTML) + 1;
+        }
+
+        function increment2() {
+            var labelDOM = document.getElementById("plush");
+            var oldValue = parseInt(labelDOM.innerHTML);
+            var newValue = oldValue - 1;
+            labelDOM.innerHTML = newValue;
+        }
     </script>
 </head>
 
@@ -41,6 +53,10 @@
     <button type="button" onclick="increment1();"> +1 </button>
     <button type="button" onclick=" decrement1();"> -1 </button>
     <label id="source1"> 0 </label>
+    <br><br>
+    <button type="button" onclick="increment3();"> +1 </button>
+    <button type="button" onclick="increment2();"> -1 </button>
+    <label id="plush"> 0 </label>
 
 </body>
 

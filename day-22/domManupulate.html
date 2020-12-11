@@ -19,6 +19,18 @@
             height: 300px;
             width: 500px;
         }
+
+        #container-main-div {
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+        }
+
+        #center-div {
+            height: 300px;
+            width: 500px;
+            border: 1px solid black;
+        }
     </style>
 
     <script>
@@ -36,7 +48,7 @@
             var lastDiv = contianerDiv.childNodes[allDivs - 1];
             contianerDiv.removeChild(lastDiv);
         }
-        //-------------------------------------//
+        //-------------------------------------//  
 
         function createDiv1() {
             var div = document.createElement("div");
@@ -51,6 +63,24 @@
             var lastDiv = div.childNodes[allDivs - 1];
             div.removeChild(lastDiv);
         }
+        //----------------------------------------//
+
+        function Hello() {
+            var div = document.createElement("div");
+            div.setAttribute("class", "inner-div");
+
+            var centerDiv = document.getElementById("center-div");
+            centerDiv.appendChild(div);
+
+        }
+        function removeDiv() {
+            var div = document.getElementById("center-div");
+            var allDivs = div.childElementCount;
+            var lastDiv = div.childNodes[allDivs - 1];
+            div.removeChild(lastDiv);
+        }
+
+
     </script>
 </head>
 
@@ -71,7 +101,12 @@
     </div>
     <div id="main-div"></div>
 
-
+    <!---theard-part-->
+    <div>
+        <button onclick="Hello();">create Div</button>
+        <button onclick="removeDiv();">remove Div</button>
+    </div>
+    <div id="center-div"></div>
 
 </body>
 
