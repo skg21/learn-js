@@ -32,3 +32,9 @@ function User(fullName, email, password, dob, gender, country) {
         this.gender = gender,
         this.country = country
 }
+
+function createUser1(){
+    var fullName 
+}
+
+}
