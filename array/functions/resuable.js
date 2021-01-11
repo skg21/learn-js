@@ -12,6 +12,12 @@ function functionWithArgs(first, second) {
 functionWithArgs(10, 20);
 functionWithArgs(1, 2);
 
+function skg(first, second) {
+    console.log(first, + second);
+}
+skg(40, 60);
+
+
 //---------------------------------//
 
 function resultFunction() {
