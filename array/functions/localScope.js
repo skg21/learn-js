@@ -34,3 +34,15 @@ function details() {
 }
 var result = details();
 console.log(result);
+
+//------------------------------//
+
+var members = "boy"
+function popule() {
+    var members = "giral";
+
+    return members;
+}
+
+var result = popule();
+console.log(result);
