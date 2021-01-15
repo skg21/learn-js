@@ -24,25 +24,14 @@ function myOutfit() {
 var result = myOutfit();
 
 console.log(result);
-//------------------------------------------------------------------//
+//-----------------------------------------------------------------//
 
-var city = "rajasthan";
-function details() {
-    //  var city = "alwar";
 
-    return city;
+var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+var text = "";
+var i;
+for (i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
 }
-var result = details();
-console.log(result);
+document.getElementById("demo").innerHTML = text;
 
-//------------------------------//
-
-var members = "boy"
-function popule() {
-    var members = "giral";
-
-    return members;
-}
-
-var result = popule();
-console.log(result);
