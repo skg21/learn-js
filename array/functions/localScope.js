@@ -1,6 +1,6 @@
 function test() {
-    var loc = "foo";
-    console.log(loc);
+  var loc = "foo";
+  console.log(loc);
 }
 
 test();
@@ -13,12 +13,12 @@ console.log("------------- local vs global --------------");
 var outerWear = "T-Shirt";
 
 function myOutfit() {
-    // Only change code below this line
-    var outerWear = "sweater";
+  // Only change code below this line
+  var outerWear = "sweater";
 
 
-    // Only change code above this line
-    return outerWear;
+  // Only change code above this line
+  return outerWear;
 }
 
 var result = myOutfit();
@@ -26,12 +26,12 @@ var result = myOutfit();
 console.log(result);
 //-----------------------------------------------------------------//
 
+var pople = "boy";
 
-var cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
-var text = "";
-var i;
-for (i = 0; i < cars.length; i++) {
-  text += cars[i] + "<br>";
+function creatPople() {
+  var boy = "rohit";
+  return boy;
 }
-document.getElementById("demo").innerHTML = text;
+var result = creatPople();
+console.log(result);
 
