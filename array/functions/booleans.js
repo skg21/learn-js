@@ -52,3 +52,24 @@ function testLogicalAnd(val) {
 }
 
 testLogicalAnd(10);
+//--------------------------------//
+
+function myVar(val) {
+    if (val > 40) {
+        return "it was ture";
+    }
+    return "it was false";
+}
+var result = myVar(30);
+console.log(result);
+//-------------------------------//
+
+function myCondition(sum) {
+    if (sum < 50) {
+        return "it was ture";
+    }
+    return "it was false";
+}
+var result = myCondition(40);
+console.log(result);
+//-------------------------//
