@@ -8,17 +8,32 @@ function test(num) {
 var result = test();
 console.log(result);
 
+var val = 50;
+function bigges(val) {
+    if (val > 40) {
+        return " val is bigges then";
+    } else {
+        return "val is less then;"
+    }
+}
+var result = bigges();
+console.log(result);
+
 var a = 5;
 var b = 7;
 var c = 8;
 
 if (a > b) {
-    console.log("a");
+    if (a > c) {
+        console.log("a");
+    } else {
+        console.log("c");
+    }
 } else {
-    console.log("c");
-}
-{
     if (b > c) {
+        console.log("b");
+    } else {
         console.log("c");
     }
 }
+
