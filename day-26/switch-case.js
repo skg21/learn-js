@@ -1,7 +1,7 @@
 function switchOfStuff(val) {
   var answer = "";
   // Only change code below this line
-  switch (val){
+  switch (val) {
     case "a":
       answer = "apple";
       break;
@@ -23,3 +23,6 @@ function switchOfStuff(val) {
 var result = switchOfStuff(1);
 
 console.log(result);
+
+
+

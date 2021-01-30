@@ -1,12 +1,12 @@
 function testSize(num) {
   // Only change code below this line
-  if(num < 5) {
+  if (num < 5) {
     return "Tiny";
-  } else if(num < 10) {
+  } else if (num < 10) {
     return "Small";
-  } else if(num < 15) {
+  } else if (num < 15) {
     return "Medium";
-  } else if(num < 20) {
+  } else if (num < 20) {
     return "Large"
   } else {
     return "Huge";
