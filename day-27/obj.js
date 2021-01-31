@@ -32,3 +32,14 @@ objName[Name];
 function objFunction(val) {
     return "gujjar" + val;
 }
+
+var boy = {
+    name: "kamal",
+    hight: "6fit",
+    work: "UI Dovloper",
+    adders: "rajsthan"
+}
+
+var sum = "work";
+var result = boy["sum"]
+console.log(result);
