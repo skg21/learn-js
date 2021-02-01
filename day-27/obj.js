@@ -13,6 +13,7 @@ var someObj = {
     propName: "John"
 };
 
+
 var someProp = propPrefix("Name"); //"propName"
 someObj[someProp];
 
@@ -32,6 +33,7 @@ objName[Name];
 function objFunction(val) {
     return "gujjar" + val;
 }
+//--------------------------------------//
 
 var boy = {
     name: "kamal",
@@ -39,7 +41,11 @@ var boy = {
     work: "UI Dovloper",
     adders: "rajsthan"
 }
-
 var sum = "work";
 var result = boy["sum"]
 console.log(result);
+
+var objName = {
+    "name": "css html",
+    
+}
