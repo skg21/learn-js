@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.loginDiv{
+    width: 320px;
+    height: 420px;
+    position: relative;
+    margin: 6% auto;
+    background: cyan;
+    padding: 5px;
+    overflow: hidden;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
