@@ -1,9 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
+}
+form{
+    margin-top: 50px;
+}
+h1{
+    margin: 35px 55px ;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .loginDiv{
-    width: 320px;
+    width: 320px; 
     height: 420px;
     position: relative;
     margin: 6% auto;
@@ -14,11 +22,35 @@
 .input-field{
     width: 100%;
     padding: 10px 0;
-    margin: 5px 0;
+    margin: 12px 0;
     border-top: 0;
     border-left: 0;
     border-right: 0;
     border-bottom: 1px solid #999;
     outline: none;
     background: transparent;
+}
+.chck-box{
+    margin: 30px 10px 30px 0px;
+}
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 138px;
+    position: absolute;
+}
+button{
+    width: 85%;
+   padding: 10px 30px;
+   cursor: pointer;
+   display: block;
+   margin: auto;
+   background: linear-gradient(to right,  #ff105f,#ffad06);
+   border: 0;
+   outline: none;
+   border-radius:30px;
+
+}
+button:hover{
+   color: #000;
 }
