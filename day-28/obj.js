@@ -38,3 +38,4 @@ checkObj(obj1, "prop1");
 var sum = obj1.prop1;
 console.log(sum);
 
+
