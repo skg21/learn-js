@@ -1,41 +1,22 @@
-var myDog = {
-  "name": "Coder",
-  "legs": 4,
-  "tails": 1,
-  "friends": ["freeCodeCamp Campers", "jhabbu"]
-};
-
-myDog.tails++;
-
-//add new property in object
-
-myDog.name = "moto";
-
-console.log(myDog);
-
-myDog.friends.push("kaliya");
-console.log(myDog);
-
-delete myDog.friends;
-
-console.log(myDog);
-
-function checkObj(obj, checkProp) {
-  // Only change code below this line
-  if (obj.hasOwnProperty(checkProp)) {
-    return obj[checkProp];
-  } else {
-    return "Not Found";
+var shoes = [
+  {
+    brand: "nike",
+    price: 4000,
+  },
+  {
+    brand: "campus",
+    price: 1500,
+  }, {
+    brand: "addidas",
+    price: 3000
   }
-  // Only change code above this line
-}
 
-var obj1 = {
-  prop1: "value1"
+];
+
+function readProp(obj, prop) {
+  if (obj.hasownPropety(prop)) {
+    return obj[prop];
+  } else {
+    return "Not found";
+  }
 };
-
-checkObj(obj1, "prop1");
-var sum = obj1.prop1;
-console.log(sum);
-
-
