@@ -1,18 +1,35 @@
-// Setup
-function phoneticLookup(val) {
-  var result = "";
+var Animations = [
+  {
+    name: "Charlie",
+    color: "black and white",
+    age: "3years"
+  },
+  {
+    name: "Loki",
+    color: "gray",
+    age: "2years"
+  },
+  {
+    name: "jack",
+    color: "bron",
+    age: "3years"
+  },
+  {
+    name: "Simba",
+    color: "cream",
+    age: "5years"
 
-  var lookup = {
-    alpha: "Adams",
-    charlie: "chicago",
-    delta: "Denver",
-    echo: "Easy",
-    foxtrot: "Frank"
+  },
+  {
+    name: "",
+    color: "Fawn",
+    age: "4years"
   }
+];
 
-  result = lookup[val];
+console.log(Animations);
 
-  return result;
-}
+Animations[0].name;
+Animations[3].age;
+console.log(Animations[3].age);
 
-console.log(phoneticLookup("echo"));
