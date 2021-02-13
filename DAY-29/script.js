@@ -29,6 +29,10 @@ function getHistory() {
     button.setAttribute("class", "operator");
     button.setAttribute("id", "clear");
     button.innerText = "C";
+    var creatBtn = document.createElement("button");
+    creatBtn.setAttribute("class", "operator");
+    creatBtn.setAttribute("id", "backspace");
+    creatBtn.innerText = "CE";
 
     creatDiv.appendChild(containerdiv);
     containerdiv.appendChild(calculatorDiv);
@@ -39,6 +43,7 @@ function getHistory() {
     outputDiv.appendChild(outputVal);
     calculatorDiv.appendChild(keyboardDiv);
     keyboardDiv.appendChild(button);
+    keyboardDiv.appendChild(creatBtn);
 
 
 
