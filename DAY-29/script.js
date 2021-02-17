@@ -43,6 +43,11 @@ function getHistory() {
     creatBtn2.setAttribute("id", "/");
     creatBtn2.innerText = "&#247;";
 
+    var creatBtn3 = document.createElement("button");
+    creatBtn3.setAttribute("class", "operator");
+    creatBtn3.setAttribute("id", "7");
+    creatBtn3.innerText = "7";
+
     creatDiv.appendChild(containerdiv);
     containerdiv.appendChild(calculatorDiv);
     calculatorDiv.appendChild(resultDiv);
@@ -55,6 +60,7 @@ function getHistory() {
     keyboardDiv.appendChild(creatBtn);
     keyboardDiv.appendChild(creatBtn1);
     keyboardDiv.appendChild(creatBtn2);
+    keyboardDiv.appendChild(creatBtn3);
 
 
 
