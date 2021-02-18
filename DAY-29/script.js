@@ -57,7 +57,6 @@ function getHistory() {
     outputDiv.appendChild(outputVal);
     calculatorDiv.appendChild(keyboardDiv);
     keyboardDiv.appendChild(button);
-    keyboardDiv.appendChild(creatBtn);
     keyboardDiv.appendChild(creatBtn1);
     keyboardDiv.appendChild(creatBtn2);
     keyboardDiv.appendChild(creatBtn3);
