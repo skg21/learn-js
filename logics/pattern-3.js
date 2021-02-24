@@ -81,13 +81,37 @@ for (var i = 0; i < arr1.length; i++) {
     tatal += arr1[i];
 };
 console.log(tatal);
+//
+for (var i = 1; i <= 5; i++) {
+    for (var k = 1; k < i; k++) {
+        process.stdout.write(" ");
+    }
+    for (var j = 5; j >= i; j--) {
+        process.stdout.write("*");
+    }
+    process.stdout.write("\n");
+}
 
+console.log("============================");
+for (var j = 1; j <= 5; j++) {
+    for (var k = 1; k < j; k++) {
+        process.stdout.write(" ");
+    }
+    for (var i = 1; i <= 5 - (j - 1); i++) {
+        process.stdout.write("*");
+    }
+    process.stdout.write("\n");
 
-
-
-
-
-
+};
+for (var j = 1; j <= 5; j++) {
+    for (var k = 1; k <= 5 - (j - 1);) {
+        process.stdout.write(" ");
+    }
+    for (var i = 1; i < 5; i++) {
+        process.stdout.write("*");
+    }
+    process.stdout.write("\n");
+};
 
 
 
