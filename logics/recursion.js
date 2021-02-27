@@ -29,4 +29,16 @@ function logics(arr2, n) {
 var sum = logics([100, 200, 300, 400, 500], 3);
 console.log(sum);
 
+function skg(arr3, n) {
+    if (n <= 0) {
+        return 0;
+    }
+    return skg(arr3, n - 1) + arr3[n - 1];
+};
+var result = skg([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 7);
+
+console.log(result);
+
+
+
 
