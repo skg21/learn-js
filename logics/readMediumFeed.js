@@ -23,3 +23,5 @@ req.onreadystatechange = function () {
         }
     }
 }
+console.log("----------------------------------------------------------");
+
