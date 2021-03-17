@@ -3,22 +3,12 @@
 
 <head>
     <title></title>
+
+    <script src="index.js"></script>
 </head>
 
-<body>
+<body onload="lodeIndex()">
     <div class="box">
-        <div class="item">
-            <div class="div-item-firest">
-                <div class="logo-img-h4">
-                    <img src="https://miro.medium.com/fit/c/25/25/1*iQYB9PakI5YQsF0GV_KKqQ.jpeg" alt="#">
-                    <h4>kodar</h4>
-                </div>
-                <h2>jhchfkgrasi;sdwi;udfbkearjdfuilkdsfoidsjnknjcsddsksldsolsddskik </h2>
-                <h3>jdlirejhuivejidferhfbjhfrehdufijujdjcdjdjcjod</h3>
-                <span>13//7/2021</span>
-            </div>
-            <div class="div-img-second">my img</div>
-        </div>
     </div>
 
 
@@ -32,53 +22,85 @@
         .box {
             height: 100%;
             width: 100%;
-            border: 1PX SOLID black;
             flex-wrap: wrap;
         }
 
-        .item {
-            height: 10%;
-            width: 50%;
-            border: solid 1px black;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .div-item-firest {
+        .items {
             height: 100%;
-            width: 70%;
-            border: solid 1px black;
+            width: 55%;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 50px;
+            margin-left: 125px;
+            margin-bottom: 50px;
+
+        }
+
+        .div-items {
+            height: 100%;
+            width: 72%;
             flex-wrap: wrap;
 
         }
 
-        .div-img-second {
-            height: 30%;
-            width: 20%;
-            border: solid 1px black;
-        }
-
-        .logo-img-h4 {
+        .logo-img {
             display: flex;
-            margin: 5px;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 10px;
         }
 
-        .logo-img-h4 img {
+        .logo-img img {
             height: 30px;
             width: 30px;
             border-radius: 50%;
         }
 
-        .div-item-firest h2 {
-            font-size: 20px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            flex-wrap: wrap;
+        .logo-img h4 {
+            margin-left: 20px;
+            margin-top: 5px;
+            height: 100%;
+            width: 90%;
+        }
+
+
+        .div-items h2 {
+            font-size: 22px;
+            line-height: 28px;
+            color: rgba(41, 41, 41, 1);
             font-weight: 400;
-            padding: 5px;
-            height: 10%;
+            height: 100%;
+            width: 90%;
             flex-wrap: wrap;
+            margin-bottom: 10px;
 
 
+        }
+
+        .div-items h3 {
+            font-size: 16px;
+            line-height: 20px;
+            color: rgba(20, 10, 20, 1);
+            height: 100%;
+            width: 85%;
+            margin-bottom: 10px;
+
+        }
+
+        .div-items span {
+
+            font-size: 13px;
+            font-family: monospace;
+            height: 100%;
+            width: 85%;
+            margin-bottom: 10px;
+
+        }
+
+        .div-img img {
+            height: 133px;
+            width: 200px;
+            margin: 12px 7px;
         }
     </style>
 
