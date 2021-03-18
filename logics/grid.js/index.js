@@ -1,19 +1,21 @@
 function lodeIndex() {
-    createTrerdingArticleList();
+    renderTredingArticles();
 };
 
 
 function renderTredingArticles() {
-    var url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@KonradDaWo";
-    then(url)
-        .then(Response.json())
-        .then(data = createTrerdingArticleList(data));
+    var url = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@KonradDaWo"
+    fetch(url)
+        .then(response => response.json())
+        .then(data => createTrerdingArticleList(data));
 }
 
+function createTrerdingArticleList(data) {
 
-function createTrerdingArticleList() {
-
-    for (var i = 0; i < 5; i++) {
+    for (var i = 0; i < data.items.length; i++) {
+        console.log(data);
+        var item = data.items[i];
+        var feed = data.feed;
         var div = document.getElementsByClassName("box")[0];
         var items = document.createElement("div");
         items.setAttribute("class", "items");
@@ -25,22 +27,22 @@ function createTrerdingArticleList() {
         logoImg.setAttribute("class", "logo-img");
 
         var img = document.createElement("img");
-        img.setAttribute("src", "https://miro.medium.com/fit/c/25/25/1*iQYB9PakI5YQsF0GV_KKqQ.jpeg");
+        img.setAttribute("src", feed.image);
 
         var h4 = document.createElement("h4");
         h4.setAttribute("class", "#");
-        h4.innerText = "sonu";
+        h4.innerText = feed.title;
 
         var Hedding = document.createElement("h2");
         Hedding.setAttribute("class", "#");
-        Hedding.innerText = "How to display Medium posts on a website with plain/vanilla JS. Basic API usage example." ;
+        Hedding.innerText = item.title;
 
         var h3 = document.createElement("h3");
         h3.setAttribute("class", "#")
         h3.innerText = "king of rajesthan india ,,skg 21 github jjirefjd";
 
         var span = document.createElement("span");
-        span.innerText = "13//7/2021";
+        span.innerText =item.pubDate;
 
         var divImg = document.createElement("div")
         divImg.setAttribute("class", "div-img");
