@@ -1,5 +1,5 @@
 const person = {
-    name : "karan"
+    name: "karan"
 }
 
 Object.freeze(person);
@@ -10,8 +10,9 @@ console.log(person);
 const print = (name) => { console.log(name); }
 //const print = name => console.log(name);
 
-function printName(name="Anonymous") {
+function printName(name = "Anonymous") {
     console.log(name);
 }
 
 printName("karan");
+
