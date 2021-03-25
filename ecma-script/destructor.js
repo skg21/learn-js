@@ -6,7 +6,6 @@ const user = {
 //const name = user.name;
 //const age = user.age;
 const { name, age } = user;
-
 console.log(name, age);
 
 
@@ -19,3 +18,15 @@ const userName = {
 }
 const reed = userName.name;
 console.log(reed);
+
+const companyName = {
+    name: "acer",
+    age: 26
+
+}
+const { name, age } = companyName;
+console.log(name, age);
+
+
+
+
