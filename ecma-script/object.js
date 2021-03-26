@@ -53,16 +53,42 @@ let stack = {
         this.arr.pop();
     }
 };
+console.log(stack.arr);
+stack.push(1);
+stack.push(1);
+stack.push(1);
+stack.push(1);
+stack.print();
+stack.pop();
+stack.pop();
+stack.print();
+//stack.shift(); 
 
-stack.push(1);
-stack.push(1);
-stack.push(1);
-stack.push(1);
-stack.print();
-stack.pop();
-stack.pop();
-stack.print();
-stack.shift();
+let local = {
+    arr: [],
+
+    reed: function () {
+        console.log(...this.arr);
+    },
+    push: function (newVal) {
+        this.arr.push(newVal);
+    },
+    pop: function () {
+        this.arr.pop();
+    }
+};
+local.push(1);
+local.push(2);
+local.push(3);
+local.push(4);
+local.push(5);
+console.log(local.arr);
+local.pop();
+
+
+
+
+
 
 
 
