@@ -22,16 +22,34 @@ let person = [
 
 let s = 25;
 for (let i = 0; i < person.length; i++) {
-    if (person[i].age > s) {
+    if (person[i].age < s) {
         console.log(person[i].name);
     }
 
 };
-/*
-for (let i = 0; i < person.length; i++) {
-    if (person[i].interest.includes("cricket")) {
-        console.log(person[i].name);
+
+
+const local = [{
+    name: "kamal",
+    age: 23
+},
+{
+    name: "vikarm",
+    age: 34,
+
+},
+{
+    name: "rohit",
+    age: 30,
+}
+];
+
+const A = 23;
+for (const i = 0; i < local.length; i++) {
+    if (local[i].age > A) {
+        console.log(local[i].age);
     }
-};*/
+};
+
 
 
