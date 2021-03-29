@@ -23,10 +23,18 @@ let person = [
 let s = 25;
 for (let i = 0; i < person.length; i++) {
     if (person[i].age < s) {
-        console.log(person[i].job);
+        console.log(person[i].interst);
     }
 
 };
+
+for (let i = 0; i < person.length; i++) {
+    if (person[i] > s) {
+        console.log(person[i].interst("cricket"));
+    }
+};
+
+
 
 
 
