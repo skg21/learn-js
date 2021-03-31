@@ -27,19 +27,3 @@ for (let i = 0; i < person.length; i++) {
     }
 
 };
-
-for (let i = 0; i < person.length; i++) {
-    if (person[i] > s) {
-        console.log(person[i].interst("cricket"));
-    }
-};
-
-
-
-
-
-
-
-
-
-
